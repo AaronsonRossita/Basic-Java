@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -13,9 +15,18 @@ public class Main {
 //
 //        byte a1 = 127;
 //        short a2 = 32767;
+//        int n = 345;
+//        Integer n1 = null;
 //        long a3 = 45435l;
 //        float a4 = 58794f;
 //        double a5 = 2.5;
+//
+//        Integer b2 = 45;  //Autoboxing
+//        int a = b2;
+//
+//        int a = (int) 2.9; //Casting
+//        System.out.println(a);
+//
 //
 //        char r = 'r';
 //
@@ -44,11 +55,11 @@ public class Main {
 //        if(!trueOrFalse){
 //            System.out.println("sike");
 //        }
-
+//
         Scanner scanner = new Scanner(System.in);
-        Food food = new Food("fruit","Company");
+//        Food food = new Food("fruit","Company");
 //        System.out.println(food);
-        Fruit fruit = new Fruit("fruit","blah","banana");
+//        Fruit fruit = new Fruit("fruit","blah","banana");
 //        System.out.println(fruit);
 //
 //        String s1 = "Hello";
@@ -102,13 +113,8 @@ public class Main {
 //        calc.sum(1,3);
 //        Vegetable vegie = new Vegetable("veggie","blah",15);
 //        System.out.println(vegie);
-
-        String menu =
-                "Please select one of the following options: \n"
-                        + " 1. Create an object of food \n"
-                        + " 2. Create an object of fruit \n"
-                        + " 3. Create an object of vegetable \n";
-
+//
+//
 //        System.out.println(menu);
 //
 //        int n = scanner.nextInt();
@@ -125,8 +131,24 @@ public class Main {
 //            default:
 //                System.out.println("please start over and give the right number");
 //        }
+//
+//        Food f1 = new Food("a","b");
+//        Food f2 = new Food("a","b");
+//
+//        String s1 = "aaa";
+//        String s2 = "aaa";
+//        System.out.println(s1.compareTo(s2) == -1);
 
+        List<Integer> numbers = new ArrayList<>();
+        List<String> words = new ArrayList<>();
 
+        numbers.add(0,2);
+        numbers.add(3);
+        numbers.add(4);
+        System.out.println(numbers);
+        System.out.println(numbers.get(2));
 
     }
 }
+
+

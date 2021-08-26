@@ -30,9 +30,29 @@ public class Food {
         System.out.println(" is spoiled");
     }
 
+    public  int compareTo (Food f){
+        if(f.type != this.type || f.company != this.company){
+            return -1;
+        }else{
+            return 0;
+        }
+    }
+
     @Override
     public String toString() {
         return "This food is of " + type + " type\n"
                 + "and it is produced by " + company;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        Food f = (Food) obj;
+        if(f.company == this.company && f.type == this.type){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
 }

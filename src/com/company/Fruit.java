@@ -31,4 +31,14 @@ public class Fruit extends Food{
         return super.toString() + "\n"
                 + "and its called " + name;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        Fruit fruit = (Fruit) obj;
+        if (this.name.equals(fruit.getName())) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
