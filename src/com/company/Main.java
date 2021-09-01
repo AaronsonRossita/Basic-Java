@@ -56,7 +56,7 @@ public class Main {
 //            System.out.println("sike");
 //        }
 //
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 //        Food food = new Food("fruit","Company");
 //        System.out.println(food);
 //        Fruit fruit = new Fruit("fruit","blah","banana");
@@ -92,7 +92,7 @@ public class Main {
 //            System.out.println("a is smaller");
 //            a++;
 //        }while(a < b);
-
+//
 //        for (int i = 0; i < arr1.length; i++) {
 //            System.out.println(arr1[i]);
 //        }
@@ -100,11 +100,7 @@ public class Main {
 //        for ( int element : arr1){
 //            System.out.println(element);
 //        }
-//        House red = new House();
-//        House green = red;
-//        House blue = new House(red);
-//        House purple = new House(blue.getWindows(),blue.getRoofType(),blue.isLawn());
-//        red.setLawn(true);
+//
 //
 //        System.out.println(red);
 //        System.out.println(blue);
@@ -132,21 +128,39 @@ public class Main {
 //                System.out.println("please start over and give the right number");
 //        }
 //
-//        Food f1 = new Food("a","b");
-//        Food f2 = new Food("a","b");
 //
 //        String s1 = "aaa";
 //        String s2 = "aaa";
 //        System.out.println(s1.compareTo(s2) == -1);
+//
+//        List<Integer> numbers = new ArrayList<>();
+//        List<String> words = new ArrayList<>();
+//
+//        numbers.add(0,2);
+//        numbers.add(3);
+//        numbers.add(4);
+//        System.out.println(numbers);
+//        System.out.println(numbers.get(2));
+//
+//        House red = new House(4);
+//
+//        House blue = red;
+//        not copying the object, just creating a new reference
+//
+//
+//        House blue = new House(red.getWindows(),red.getRoofType(),red.isLawn());
+//        actually copying the object but a longer way
+//
+//
+//        House blue = new House(red);
+//        System.out.println(red);
+//        System.out.println(blue);
+//
+//        red.setRoofType("flat");
+//
+//        System.out.println(red);
+//        System.out.println(blue);
 
-        List<Integer> numbers = new ArrayList<>();
-        List<String> words = new ArrayList<>();
-
-        numbers.add(0,2);
-        numbers.add(3);
-        numbers.add(4);
-        System.out.println(numbers);
-        System.out.println(numbers.get(2));
 
     }
 }

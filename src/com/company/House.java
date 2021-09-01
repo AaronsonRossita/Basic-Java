@@ -10,17 +10,22 @@ public class House {
 
     }
 
+    public House(int windows){
+        this.windows = windows;
+    }
+
     public House(int windows, String roofType, boolean lawn) {
         this.windows = windows;
         this.roofType = roofType;
         this.lawn = lawn;
     }
 
-    public House(House house){
+    public House(House house) {
         this.windows = house.windows;
         this.roofType = house.roofType;
         this.lawn = house.lawn;
     }
+
 
     public int getWindows() {
         return windows;
@@ -49,7 +54,7 @@ public class House {
     @Override
     public String toString() {
 //        return super.toString();   //super refers to the default toString
-        return "This house has " + windows + ", the roof is "
+        return "This house has " + windows + " windows, the roof is "
                 + roofType + " and the lawn is " + lawn;
     }
 }
