@@ -9,7 +9,6 @@ interface Flyable{
     default void what(){
         System.out.println("this is the default behaviour");
     }
-
 }
 
 public class Plane implements Flyable  {
