@@ -1,4 +1,4 @@
-package Package1;
+package com.company.package1;
 
 public class Runner1 {
 

@@ -160,9 +160,55 @@ public class Main {
 //
 //        System.out.println(red);
 //        System.out.println(blue);
+// todo: learn about design patterns
 
+//        int[][] arr1 = {
+//                {1,2,3},
+//                {4,5,6},
+//                {7,8,9}
+//        };
+//
+//        int[][] arr2 = {
+//                {1, 2},
+//                {4},
+//                {7, 13, 15},
+//                {10}
+//        };
+
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.print("{");
+//            for (int j = 0; j < arr[i].length; j++) {
+//                if (j != arr[i].length-1){
+//                    System.out.print(arr[i][j] + ",");
+//                }else{
+//                    System.out.print(arr[i][j]);
+//                }
+//            }
+//            System.out.println("}");
+//        }
+
+//        for (int[] temp : arr1) {
+//            System.out.print("{");
+//            for (int number : temp){
+//                System.out.print(number + ",");
+//            }
+//            System.out.println("}");
+//        }
 
     }
+
+//    public static int war(int[] arr){
+//        int sumOdd = 0;
+//        int sumEven = 0;
+//        for (int number : arr){
+//            if (number % 2 == 0){
+//                sumEven += number;
+//            }else{
+//               sumOdd += number;
+//            }
+//        }
+//        return (sumOdd > sumEven) ? sumOdd - sumEven : sumEven - sumOdd;
+//    }
 }
 
 

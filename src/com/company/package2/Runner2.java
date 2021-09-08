@@ -1,8 +1,8 @@
-package Package2;
+package com.company.package2;
 
 
-import Package1.Class1;
-//import Package1.Class2;
+import com.company.package1.Class1;
+//import com.company.Package1.Class2;
 
 public class Runner2 {
 
@@ -23,11 +23,11 @@ public class Runner2 {
 
 
 
-//       in order to create this object the Package2.Class3 was imported
-        Class3 c3 = new Class3();
-        System.out.println(c3.b); // thnx to the extension/inheritance
-
-        c3.two();
+//       in order to create this object the com.company.Package2.Class3 was imported
+//        Class3 c3 = new Class3();
+//        System.out.println(c3.b); // thnx to the extension/inheritance
+//
+//        c3.two();
 //        c3.four();
 
 

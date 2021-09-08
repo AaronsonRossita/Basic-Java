@@ -1,4 +1,6 @@
-package Package1;
+package com.company.package1;
+
+import java.util.Iterator;
 
 public class Class1 {
 
@@ -6,6 +8,18 @@ public class Class1 {
     public int b = 2;
     private int c = 4;
     protected int d = 3;
+
+    Iterator i = new Iterator() {
+        @Override
+        public boolean hasNext() {
+            return false;
+        }
+
+        @Override
+        public Object next() {
+            return null;
+        }
+    };
 
     public static void one (){
         System.out.println("method1");
