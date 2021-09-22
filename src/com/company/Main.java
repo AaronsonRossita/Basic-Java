@@ -4,7 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+enum Levels{
+    LOW, MEDIUM, HIGH
+}
+
 public class Main {
+
+//    public final static String[] levels1 = {"Low","Medium","High"};
+//    public final static String low = "Low";
+//    public final static String med = "Medium";
+//    public final static String hig = "High";
+
+
+    public static String[] levels2 = new String[3];
 
     public static void main(String[] args) {
 
@@ -160,6 +172,7 @@ public class Main {
 //
 //        System.out.println(red);
 //        System.out.println(blue);
+
 // todo: learn about design patterns
 
 //        int[][] arr1 = {
@@ -195,20 +208,77 @@ public class Main {
 //            System.out.println("}");
 //        }
 
-    }
+//        System.out.println(levels1[0]);
+//        levels1[0] = "notLow";
+//        System.out.println(levels1[0]);
 
-//    public static int war(int[] arr){
-//        int sumOdd = 0;
-//        int sumEven = 0;
-//        for (int number : arr){
-//            if (number % 2 == 0){
-//                sumEven += number;
-//            }else{
-//               sumOdd += number;
-//            }
+//        levels2 = levels1;
+//        System.out.println(levels1);
+//        System.out.println(levels2);
+//
+//        for (int i = 0; i < levels1.length; i++) {
+//            levels1[i] = levels2[i];
 //        }
-//        return (sumOdd > sumEven) ? sumOdd - sumEven : sumEven - sumOdd;
-//    }
+//
+//        for (String level : levels2) {
+//            System.out.println(level + ",");
+//        }
+
+//        levels2[0] = low;
+//        levels2[1] = med;
+//        levels2[2] = hig;
+//        levels2[0] = med;
+//
+//        for (String level : levels2){
+//            System.out.print(level + ",");
+//        }
+//
+//        Levels l = Levels.LOW;
+//
+//        switch (l){
+//            case LOW:
+//                System.out.println("you chose Low");
+//                break;
+//            case MEDIUM:
+//                System.out.println("you chose Medium");
+//                break;
+//            case HIGH:
+//                System.out.println("you chose High");
+//                break;
+//            default:
+//                System.out.println("you chose nothing");
+//        }
+
+        String name1 = "Rossita";
+        char[] arr = {'a','b','c'};
+        String name2 = new String(arr);
+//        System.out.println(name1);
+
+//        name1 = "new name";
+//        System.out.println(name1);
+
+//        String one = "Ane";
+//        String two = "ane";
+//        System.out.println(one.compareTo(two));
+//        System.out.println(one.compareTo(two.toLowerCase()));
+
+//        System.out.println(one.equals(two));
+
+//        String name3 = name1.concat("one");
+//        System.out.println(name3);
+//        System.out.println(name1 + "one");
+
+//        String name4 = name1.replace("sit","");
+//        System.out.println(name4);
+//        System.out.println(name1.replace("sit",""));
+
+        StringBuffer buffer = new StringBuffer("my buffer");
+        System.out.println(buffer);
+        buffer.append("ina");
+        System.out.println(buffer);
+
+
+    }
 }
 
 

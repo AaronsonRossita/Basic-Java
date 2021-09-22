@@ -4,6 +4,8 @@ import java.util.Iterator;
 
 public class Class1 {
 
+
+
     int a = 1;      // default access modifier
     public int b = 2;
     private int c = 4;
