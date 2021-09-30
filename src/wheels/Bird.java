@@ -13,6 +13,11 @@ public class Bird implements Flyable, Animal {
     }
 
     @Override
+    public int howManyFlights() {
+        return 0;
+    }
+
+    @Override
     public void eat() {
 
     }

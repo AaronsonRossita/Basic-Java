@@ -16,9 +16,9 @@ public class Main {
 //    public final static String hig = "High";
 
 
-    public static String[] levels2 = new String[3];
+//    public static String[] levels2 = new String[3];
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
 //
 //        int a = 5;
@@ -249,36 +249,133 @@ public class Main {
 //                System.out.println("you chose nothing");
 //        }
 
-        String name1 = "Rossita";
-        char[] arr = {'a','b','c'};
-        String name2 = new String(arr);
+//        String name1 = "Rossita";
+//        char[] arr = {'a','b','c'};
+//        String name2 = new String(arr);
 //        System.out.println(name1);
-
+//
 //        name1 = "new name";
 //        System.out.println(name1);
-
+//
 //        String one = "Ane";
 //        String two = "ane";
 //        System.out.println(one.compareTo(two));
 //        System.out.println(one.compareTo(two.toLowerCase()));
-
+//
 //        System.out.println(one.equals(two));
-
+//
 //        String name3 = name1.concat("one");
 //        System.out.println(name3);
 //        System.out.println(name1 + "one");
-
+//
 //        String name4 = name1.replace("sit","");
 //        System.out.println(name4);
 //        System.out.println(name1.replace("sit",""));
+//
+//        StringBuffer buffer = new StringBuffer("my buffer");
+//        System.out.println(buffer);
+//        buffer.append("ina");
+//        System.out.println(buffer);
 
-        StringBuffer buffer = new StringBuffer("my buffer");
-        System.out.println(buffer);
-        buffer.append("ina");
-        System.out.println(buffer);
+        int[] arr = {1,2,3};
 
+//        try{
+//            System.out.println(arr[2]);
+//        }catch (ArrayIndexOutOfBoundsException e){
+//            System.out.println("the array ended");
+//        }catch (ArithmeticException e){
+//            System.out.println("math");
+//        }catch (Exception e){
+//            System.out.println("default exception");
+//        }
+
+//        System.out.println(arr[4]);
+
+//        try{
+//            System.out.println(arr[2]);
+//            try{
+//                System.out.println(arr[2]);
+//            }catch (Exception e){
+//                System.out.println("i was caught in the nessted catch");
+//            }
+//        }catch (Exception e){
+//            System.out.println(e.fillInStackTrace());
+//        }finally {
+//            System.out.println("finally");
+//        }
+        recursion(5);
 
     }
+
+    public static void example1 (int[] arr){
+        try{
+            System.out.println(arr[4]);
+        }catch (Exception e){
+            System.out.println(e.fillInStackTrace());
+        }
+    }
+
+    public static void example2 (int[] arr){
+        try{
+            System.out.println(arr[4]);
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("out of bounds");
+        }catch (ArithmeticException e){
+            System.out.println("math");
+        }catch(Exception e){
+            System.out.println(e.fillInStackTrace());
+        }
+    }
+
+    public static void example3 () throws Exception{
+        if (true){
+            throw new Exception("true");
+        }
+        System.out.println("something");
+
+    }
+
+    public static void example4 () throws Exception {
+        example3();
+    }
+
+    public static void example5 (){
+        try{
+            example3();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
+    public static void example6(int[] arr){
+        try{
+            System.out.println(arr[5]);
+        }catch(Exception e){
+            e.printStackTrace();
+        }finally {
+            System.out.println("I'm happening either way");
+        }
+    }
+
+    public static void example7(int x) throws MyException{
+        if(x > 5){
+            throw new MyException(x + " is larger than 5");
+        }else{
+            System.out.println(x + " is smaller than 5");
+        }
+    }
+
+    public static void recursion (int x){
+        System.out.println("now x is " + x);
+        if (x == 0){
+            System.out.println("done");
+        }else{
+            System.out.println("hi");
+            recursion(--x);
+        }
+    }
+
 }
 
 
