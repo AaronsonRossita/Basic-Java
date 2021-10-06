@@ -7,4 +7,6 @@ public class Class3 {
 
     Class2 c2 = new Class2();
 
+
+
 }
