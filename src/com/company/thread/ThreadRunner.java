@@ -6,7 +6,7 @@ public class ThreadRunner {
 
 //        System.out.println(Thread.activeCount());
 //        System.out.println(Thread.currentThread().getName());
-//        Thread.currentThread().setName("whatup");
+//        Thread.currentThread().setName("whats up");
 //        System.out.println("new name");
 //        System.out.println(Thread.currentThread().getName());
 //        System.out.println(Thread.currentThread().getPriority());
@@ -36,11 +36,22 @@ public class ThreadRunner {
 //        System.out.println(Thread.currentThread().getPriority());
 //        System.out.println(myThread.getPriority());
 
-        System.out.println(myThread.isDaemon());
-        myThread.sleep(10000);
-        myThread.setDaemon(true);
-        System.out.println(myThread.isDaemon());
+//        System.out.println(myThread.isDaemon());
+//        myThread.sleep(10000);
+//        myThread.setDaemon(true);
+//        System.out.println(myThread.isDaemon());
 
+//        MyRunnableThread mrt = new MyRunnableThread();
+//        Thread newThread = new Thread(mrt);
+
+        Thread newThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("The runnable is running");
+            }
+        });
+        newThread.start();
+        Example e = new Example(new Object());
 
     }
 
